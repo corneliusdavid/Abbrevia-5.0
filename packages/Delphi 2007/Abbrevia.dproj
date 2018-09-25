@@ -1,0 +1,137 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{27961260-9b35-45ab-beee-6736441055eb}</ProjectGuid>
+    <MainSource>Abbrevia.dpk</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>C:\Users\Public\Documents\RAD Studio\5.0\Bpl\Abbrevia110.bpl</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;ADODB_TLB=AdoInt</DCC_UnitAlias>
+    <DCC_MapFile>3</DCC_MapFile>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;ADODB_TLB=AdoInt</DCC_UnitAlias>
+    <DCC_MapFile>3</DCC_MapFile>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>Package</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <Package_Options>
+      <Package_Options Name="PackageDescription">Abbrevia Run-time package - RTL2007</Package_Options>
+      <Package_Options Name="ImplicitBuild">False</Package_Options>
+      <Package_Options Name="DesigntimeOnly">False</Package_Options>
+      <Package_Options Name="RuntimeOnly">True</Package_Options>
+      <Package_Options Name="LibSuffix">110</Package_Options>
+    </Package_Options>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">True</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">4</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1033</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">Abbrevia Components</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">5.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright">Copyright (c) Abbrevia Group 2011</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">Abbrevia</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">5.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dcloffice2k100.bpl">Microsoft Office 2000 Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+      <Excluded_Packages Name="$(BDS)\bin\dclofficexp100.bpl">Microsoft Office XP Beispiele für gekapselte Komponenten für Automation Server</Excluded_Packages>
+    </Excluded_Packages>
+    <Source>
+      <Source Name="MainSource">Abbrevia.dpk</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="Abbrevia.dpk">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="$(SystemRoot)\system32\rtl.dcp" />
+    <DCCReference Include="..\..\source\AbArcTyp.pas" />
+    <DCCReference Include="..\..\source\AbBase.pas" />
+    <DCCReference Include="..\..\source\AbBitBkt.pas" />
+    <DCCReference Include="..\..\source\AbBrowse.pas" />
+    <DCCReference Include="..\..\source\AbBzip2.pas" />
+    <DCCReference Include="..\..\source\AbBzip2Typ.pas" />
+    <DCCReference Include="..\..\source\AbCabExt.pas" />
+    <DCCReference Include="..\..\source\AbCabKit.pas" />
+    <DCCReference Include="..\..\source\AbCabMak.pas" />
+    <DCCReference Include="..\..\source\AbCabTyp.pas" />
+    <DCCReference Include="..\..\source\AbCBrows.pas" />
+    <DCCReference Include="..\..\source\AbCharset.pas" />
+    <DCCReference Include="..\..\source\AbConst.pas" />
+    <DCCReference Include="..\..\source\AbCrtl.pas" />
+    <DCCReference Include="..\..\source\AbDfBase.pas" />
+    <DCCReference Include="..\..\source\AbDfCryS.pas" />
+    <DCCReference Include="..\..\source\AbDfDec.pas" />
+    <DCCReference Include="..\..\source\AbDfEnc.pas" />
+    <DCCReference Include="..\..\source\AbDfHufD.pas" />
+    <DCCReference Include="..\..\source\AbDfInW.pas" />
+    <DCCReference Include="..\..\source\AbDfOutW.pas" />
+    <DCCReference Include="..\..\source\AbDfPkMg.pas" />
+    <DCCReference Include="..\..\source\AbDfStrm.pas" />
+    <DCCReference Include="..\..\source\AbDfXlat.pas" />
+    <DCCReference Include="..\..\source\AbExcept.pas" />
+    <DCCReference Include="..\..\source\AbFciFdi.pas" />
+    <DCCReference Include="..\..\source\AbGzTyp.pas" />
+    <DCCReference Include="..\..\source\AbLzma.pas" />
+    <DCCReference Include="..\..\source\AbPPMd.pas" />
+    <DCCReference Include="..\..\source\AbResString.pas" />
+    <DCCReference Include="..\..\source\AbSelfEx.pas" />
+    <DCCReference Include="..\..\source\AbSpanSt.pas" />
+    <DCCReference Include="..\..\source\AbSWStm.pas" />
+    <DCCReference Include="..\..\source\AbTarTyp.pas" />
+    <DCCReference Include="..\..\source\AbUnzOutStm.pas" />
+    <DCCReference Include="..\..\source\AbUnzper.pas" />
+    <DCCReference Include="..\..\source\AbUnzPrc.pas" />
+    <DCCReference Include="..\..\source\AbUtils.pas" />
+    <DCCReference Include="..\..\source\AbVMStrm.pas" />
+    <DCCReference Include="..\..\source\AbWavPack.pas" />
+    <DCCReference Include="..\..\source\AbZBrows.pas" />
+    <DCCReference Include="..\..\source\AbZipExt.pas" />
+    <DCCReference Include="..\..\source\AbZipKit.pas" />
+    <DCCReference Include="..\..\source\AbZipper.pas" />
+    <DCCReference Include="..\..\source\AbZipPrc.pas" />
+    <DCCReference Include="..\..\source\AbZipTyp.pas" />
+    <DCCReference Include="..\..\source\AbZLTyp.pas" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>
